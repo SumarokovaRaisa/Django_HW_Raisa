@@ -1,0 +1,17 @@
+.idea/
+.env
+# Python
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+.env
+.db
+
+# IDEs
+.idea/
+.vscode/
+
+# OS files
+.DS_Store"db.sqlite3" 
