@@ -12,6 +12,7 @@ class CategoryAdmin(admin.ModelAdmin):
 class TaskAdmin(admin.ModelAdmin):
     list_display = ("id", "title", "status", "deadline", "created_at")
     search_fields = ("title",)
+    ordering = ('-created_at',)
     filter_horizontal = ("categories",)
 
 @admin.register(Subtask)
@@ -19,3 +20,4 @@ class SubtaskAdmin(admin.ModelAdmin):
     list_display = ("id", "title", "status", "deadline", "created_at")
     list_filter = ("status", "created_at", "deadline")
     search_fields = ("title",)
+    ordering = ('-created_at',)
