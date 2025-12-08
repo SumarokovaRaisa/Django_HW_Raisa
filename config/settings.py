@@ -2,6 +2,9 @@ from pathlib import Path
 import environ
 import os
 
+from django.conf.global_settings import USE_TZ
+USE_TZ = True
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
